@@ -55,7 +55,15 @@ const HowItWorks = () => {
               />
             </div>
             <div className="hiw-video">
-                <video className="pointer-events-none" playsInline preload="none" muted autoPlay ref={videoRef}>
+                <video
+                  playsInline
+                  preload="auto"
+                  muted
+                  autoPlay
+                  loop
+                  controls
+                  ref={videoRef}
+                >
                   <source src={frameVideo} type="video/mp4" />
                 </video>
               </div>
